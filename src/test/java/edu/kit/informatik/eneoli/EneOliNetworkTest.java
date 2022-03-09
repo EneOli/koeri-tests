@@ -3,6 +3,7 @@ package edu.kit.informatik.eneoli;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -815,10 +816,6 @@ public class EneOliNetworkTest {
         Assertions.assertEquals(2, level4.size());
         Assertions.assertEquals("5.5.5.5", level4.get(0).toString());
         Assertions.assertEquals("6.6.6.6", level4.get(1).toString());
-
-        // EXTRA
-
-        Assertions.assertEquals(1, network.getTopologies().size());
     }
 
     @Test
